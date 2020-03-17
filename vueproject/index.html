@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Vue Project</title>
+</head>
+<body>
+
+<div id="app">
+    <div class="cart">
+        <p>Cart({{ cart.length }})</p>
+    </div>
+    <product :premium="premium" @add-to-cart="updateCart"></product>
+    <product></product>
+    <product></product>
+
+</div>
+
+
+<script src="https://unpkg.com/vue"></script>
+<script src="main.js"></script>
+</body>
+</html>
